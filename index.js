@@ -34,4 +34,5 @@ function displayCharacterDetails(character) {
 }function initialize() {
   fetchCharacters();
 }
+initialize();
 
