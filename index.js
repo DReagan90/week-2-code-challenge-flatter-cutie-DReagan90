@@ -16,3 +16,8 @@
 function displayCharacterDetails(character) {
   const detailedInfo = document.getElementById('detailed-info');
   detailedInfo.innerHTML = `
+ <h2>${character.name}</h2>
+        <img src="${character.image}" alt="${character.name}">
+        <p>Votes: <span id="vote-count">${character.votes}</span></p>';
+        <button id="vote-button">Vote</button>
+    `;
