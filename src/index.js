@@ -33,11 +33,7 @@ function displayCharacterDetails(character) {
       <input type="number" id="votes" name="votes" placeholder="Enter votes" required>
       <button type="submit">Add Votes</button>
     </form>
-    <form id="character-form">
-      <input type="text" id="name" name="name" placeholder="Character name" required>
-      <input type="url" id="image" name="image" placeholder="Image URL" required>
-      <button type="submit">Add Character</button>
-    </form>
+   
   `;
 
   const voteButton = document.getElementById('vote-button');
