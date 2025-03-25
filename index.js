@@ -23,6 +23,10 @@ function displayCharacterDetails(character) {
         <img src="${character.image}" alt="${character.name}">
         <p>Votes: <span id="vote-count">${character.votes}</span></p>';
         <button id="vote-button">Vote</button>
+         <form id="votes-form">
+            <input type="number" id="votes" name="votes" placeholder="Enter votes" required>
+            <button type="submit">Add Votes</button>
+        </form>
     `;
   const voteButton = document.getElementById('vote-button');
   voteButton.addEventListener('click', () => voteForCharacter(character));
