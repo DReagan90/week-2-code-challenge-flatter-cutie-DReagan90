@@ -25,3 +25,5 @@ function displayCharacterDetails(character) {
   voteButton.addEventListener('click', () => voteForCharacter(character));
   votesForm.onsubmit = (event) => {
     event.preventDefault();
+    const votesInput = document.getElementById('votes').value;
+    const voteCount = document.getElementById('vote-count');
