@@ -21,3 +21,5 @@ function displayCharacterDetails(character) {
         <p>Votes: <span id="vote-count">${character.votes}</span></p>';
         <button id="vote-button">Vote</button>
     `;
+  const voteButton = document.getElementById('vote-button');
+  voteButton.addEventListener('click', () => voteForCharacter(character));
