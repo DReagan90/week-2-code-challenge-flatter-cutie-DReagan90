@@ -31,4 +31,7 @@ function displayCharacterDetails(character) {
     voteCount.textContent = newVotes;
     votesForm.reset();
 };
+}function initialize() {
+  fetchCharacters();
 }
+
