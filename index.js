@@ -23,3 +23,5 @@ function displayCharacterDetails(character) {
     `;
   const voteButton = document.getElementById('vote-button');
   voteButton.addEventListener('click', () => voteForCharacter(character));
+  votesForm.onsubmit = (event) => {
+    event.preventDefault();
