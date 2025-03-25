@@ -27,3 +27,8 @@ function displayCharacterDetails(character) {
     event.preventDefault();
     const votesInput = document.getElementById('votes').value;
     const voteCount = document.getElementById('vote-count');
+    const newVotes = parseInt(voteCount.textContent) + parseInt(votesInput);
+    voteCount.textContent = newVotes;
+    votesForm.reset();
+};
+}
